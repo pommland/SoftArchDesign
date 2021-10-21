@@ -36,7 +36,7 @@ public class HealthcareWorkerTeam implements HealthcareServiceable {
 
     @Override
     public double getPrice() {
-        double totalPrice = 0;
+        float totalPrice = 0f;
         for (HealthcareServiceable member : this.members){
             totalPrice += member.getPrice();
         }

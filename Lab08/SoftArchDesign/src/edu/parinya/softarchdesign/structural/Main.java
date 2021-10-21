@@ -35,7 +35,7 @@ public class Main {
         theGoodDoctor.addMember(taxNicholas);
         theGoodDoctor.addMember(timeAnotonia);
         theGoodDoctor.addMember(chuku);
-
+//
         System.out.println("================================");
         theGoodDoctor.service();
         System.out.println("The total price of the Good Doctor Team is " + theGoodDoctor.getPrice());

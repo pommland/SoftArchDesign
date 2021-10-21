@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="719585ed-4476-4955-9483-34717598e4a0" name="Changes" comment="" />
+    <list default="true" id="719585ed-4476-4955-9483-34717598e4a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../designPattern/factory_method/src/factory/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../designPattern/factory_method/src/factory/Dialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../designPattern/factory_method/src/factory/WindowsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../designPattern/factory_method/src/factory/WindowsDialog.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +147,8 @@
       <workItem from="1634278059359" duration="4393000" />
       <workItem from="1634283498519" duration="9019000" />
       <workItem from="1634294428657" duration="138000" />
-      <workItem from="1634294650920" duration="8556000" />
+      <workItem from="1634294650920" duration="9099000" />
+      <workItem from="1634308923470" duration="735000" />
     </task>
     <servers />
   </component>

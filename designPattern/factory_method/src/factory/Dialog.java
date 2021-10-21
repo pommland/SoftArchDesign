@@ -12,7 +12,7 @@ public abstract class Dialog {
     public void renderWindow() {
         // ... other code ...
 
-        Button okButton = createButton();
+        Button okButton = createButton(); // new WindowButton
         okButton.render();
     }
 
@@ -21,4 +21,5 @@ public abstract class Dialog {
      * objects.
      */
     public abstract Button createButton();
+
 }

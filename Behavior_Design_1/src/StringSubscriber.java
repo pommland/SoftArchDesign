@@ -3,11 +3,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 import java.util.concurrent.Flow;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
 
 public abstract class StringSubscriber implements Flow.Subscriber<String> {
     private Flow.Subscription subscription;
-    private String filename ;
+    protected String filename ;
     protected String check;
+    protected Matcher pattern;
 
 
 
@@ -18,9 +23,10 @@ public abstract class StringSubscriber implements Flow.Subscriber<String> {
 
     @Override
     public void onNext(String item){
-       if (item.matches(check)){
+        pattern =  Pattern.compile(check).matcher(item);
+       if (pattern.find()){
            try {
-               Writer file = new FileWriter(filename + ".txt", true);
+               Writer file = new FileWriter(this.filename + ".txt", true);
                file.write(item + "\n");
                file.close();
            } catch (IOException e) {
@@ -37,6 +43,4 @@ public abstract class StringSubscriber implements Flow.Subscriber<String> {
         System.out.println("Complete!");
     }
 
-
-//    public abstract boolean check(String item);
 }
